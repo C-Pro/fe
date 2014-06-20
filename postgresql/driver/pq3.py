@@ -1487,7 +1487,7 @@ class Statement(pg_api.Statement):
 		if self.string is not None:
 			q = self.database.typio._encode(str(self.string))[0]
 			cmd = [
-				element.CloseStatement(self._pq_statement_id),
+				#element.CloseStatement(self._pq_statement_id),
 				element.Parse(self._pq_statement_id, q, ()),
 			]
 		else:
