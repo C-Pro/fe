@@ -10,5 +10,5 @@ meaculpa = 'Python+Postgres'
 contact = 'python-general@pgfoundry.org'
 abstract = 'Driver and tools library for PostgreSQL'
 
-version_info = (1, 1, 1, 'pgpool')
+version_info = (1, 1, 2, 'pgpool')
 version = '.'.join(map(str, version_info))
