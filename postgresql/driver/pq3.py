@@ -1869,7 +1869,7 @@ class StoredProcedure(pg_api.StoredProcedure):
 
 		if self.srf is True:
 			if self.composite is True:
-				return self.statement.rows(*input)
+				return self.statement(*input)
 			else:
 				# A generator expression is very appropriate here
 				# as SRFs returning large number of rows would require
