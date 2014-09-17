@@ -1874,7 +1874,7 @@ class StoredProcedure(pg_api.StoredProcedure):
 				# A generator expression is very appropriate here
 				# as SRFs returning large number of rows would require
 				# substantial amounts of memory.
-				return map(get0, self.statement.rows(*input))
+				return map(get0, self.statement(*input))
 		else:
 			if self.composite is True:
 				return self.statement(*input)[0]
