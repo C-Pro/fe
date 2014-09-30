@@ -361,7 +361,7 @@ class Connection(object):
 		xm = []
 		cursors = 0
 		for x in self.garbage_cursors:
-			xm.append(element.ClosePortal(x))
+			#xm.append(element.ClosePortal(x))
 			cursors += 1
 		statements = 0
 		for x in self.garbage_statements:
